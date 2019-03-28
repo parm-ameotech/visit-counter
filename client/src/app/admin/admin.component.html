@@ -1,0 +1,29 @@
+<div class="container">
+  <mat-button-toggle-group name="fontStyle" value="All" selected="All" aria-label="Font Style">
+    <mat-button-toggle value="All" buttonId="All" (click)="getUserVisits('all')" name="All">All</mat-button-toggle>
+    <mat-button-toggle value="With" (click)="getUserVisits('full')">With Conversion</mat-button-toggle>
+    <mat-button-toggle value="Without" (click)="getUserVisits('partial')">Without Conversion</mat-button-toggle>
+  </mat-button-toggle-group>
+  <div class="h20"></div>
+  <block-ui>
+    <table class="mat-table mat-elevation-z8" style="width:100%;">
+      <thead>
+          <tr class="mat-header-row row-ht">
+              <th class="mat-header-cell header-cell-padd">Site</th>
+              <th class="mat-header-cell header-cell-padd">Country</th>
+              <th class="mat-header-cell header-cell-padd">Count</th>
+          </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let visit of visits" class="mat-header-row row-ht">
+            <th class="mat-header-cell header-cell-padd">{{visit.site}}</th>
+            <th class="mat-header-cell header-cell-padd">{{visit.country}}</th>
+            <th class="mat-header-cell header-cell-padd">{{visit.visits}}</th>
+        </tr>
+        <tr *ngIf="visits.length<=0">
+          <td  class="mat-header-cell header-cell-padd" colspan="3">No Data Found</td>
+        </tr>
+      </tbody>
+    </table>  
+  </block-ui>
+</div>

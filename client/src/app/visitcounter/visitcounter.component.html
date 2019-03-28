@@ -1,0 +1,19 @@
+<div class="container">
+    <table class="mat-table mat-elevation-z8" style="width:100%;">
+        <thead>
+            <tr class="mat-header-row row-ht">
+                <td class="header-cell-padd">{{refrel.name}}</td>
+                <td class="header-cell-padd">{{refrel.country}}</td>
+                <td class="header-cell-padd">{{refrel.ip}}</td>
+            </tr>
+        </thead>       
+    </table> 
+    <div class="h20"></div>
+    <div class="timer">
+      {{counter}}
+    </div>
+    <div class="h20"></div>
+    <div class="visit" [class.show]="counterHit">
+      Visit has been recorded after 20 seconds.
+    </div>
+</div>

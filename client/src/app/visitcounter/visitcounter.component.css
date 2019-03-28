@@ -1,0 +1,22 @@
+.timer
+{
+    height: 100px;
+    width: 101px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    padding: 20px;
+    font-size: 84px;
+}
+.visit
+{
+    padding: 10px;
+    border: 1px solid green;
+    background-color: #a6daa6;
+    color: white;
+    display: none;
+}
+
+.show
+{
+    display: block;
+}

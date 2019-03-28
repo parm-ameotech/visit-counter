@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.container
+{
+    padding: 20px;
+}
+.h20
+{
+    height: 20px;
+}
+.header-cell-padd {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid gray;
+}

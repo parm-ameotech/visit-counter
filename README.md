@@ -16,8 +16,10 @@ Client
 		3. now run ng serve it will host app on http://localhost:4200
 		
 Browse
+	
 	http://localhost:4200/?referral_site=abs.com&referral_user=john
 	You will see user information with country fetch using geoip2 and ip using request.
 	
 	http://localhost:4200/admin
 	You will see the grouped output by country.
+
